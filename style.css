@@ -1,0 +1,334 @@
+/* Custom Prop */
+:root{
+    /* Color */
+    --primary: #F8F8F8;
+    --primaryText: #554E4E;
+    --primaryBtn: #0A82A8;
+
+    --green: #006B3D ;
+    --yellow: #EFC600 ;
+    --red: #E03C32 ; 
+    --dark:var(--primaryText);
+
+
+    /* menu buttons */ 
+    --menuButtonWidth: 88px; 
+    --menuButtonHeight: 64px; 
+    --menuButtonRadius: 4px; 
+    --dropshadow: drop-shadow(2px 2px 2px black); 
+
+    /* Text size */ 
+    --xxlText: 16px;
+   --largeText: 12px; 
+   --mediumText: 10px; 
+   --smallText: 8px;
+
+   /* Text weight */ 
+   --textWeight: 400; 
+
+   /* font-style */ 
+   
+}
+
+
+
+body {
+    padding: 16px;
+    padding-left: 32px;
+    width: 320px;
+    height: 240px;
+    margin: 0; 
+    background-color: #D9D9D9;
+}
+
+.header {
+    margin-bottom: 16px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+a{
+ cursor: pointer;
+}
+
+
+
+.pagination__Icon {
+    color: var(--primary);
+   
+}
+
+.doseringsValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 197px;
+    border: 1px solid black; 
+    margin-bottom: 1rem;
+    margin-inline: auto;
+
+}
+
+h2, h3{
+    margin: 0;
+    color: var(--primary);
+    font-size: var(--xxlText);
+   
+    
+}
+
+.guide__text {
+    color: hsl(0, 0%, 0%); 
+     font-weight: var(--textWeight);
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.136);
+}
+
+.status__facility {
+    background-color: var(--green);
+    width: 112px;
+    height: 96px;
+    border-radius: 8px;
+    margin-top: 6px;
+    text-align: center;
+    filter: var(--dropshadow);
+    
+
+    
+}
+
+.status__pump {
+    background-color: var(--green);
+    width: 112px;
+    height: 96px;
+    border-radius: 8px;
+    margin-top: 6px;
+    text-align: center;
+    filter: var(--dropshadow);
+}
+
+
+
+.doseringsValue-text {
+    color: black; 
+}
+
+.statusImg {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.icon-alert {
+    border-radius: 20rem;
+}
+
+.alert {
+   background: var(--yellow);
+   border-radius: 20rem;
+   border: 5px solid #ffd500;
+
+}
+
+.checkmark {
+    border: 5px solid #0f5a3a;
+    border-radius: 20rem;
+    color: var(--primary); 
+}
+
+.icon {
+    border-radius: 20rem; 
+    color: var(--primary);
+    
+}
+
+.ej-ok {
+    background-color: var(--yellow);
+}
+
+
+/* Design af buttons i menu */ 
+
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.menu__button {
+    width: var(--menuButtonWidth);
+    height: var(--menuButtonHeight);
+    border-radius: var(--menuButtonRadius);
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    font-size: var(--largeText);
+    border: none; 
+    filter: var(--dropshadow);
+    
+}
+
+/* PAGINATION I MENU */ 
+
+.pagination {
+    width: 150px;
+    margin-inline: auto; /* Distribute all remaining space equally on both sides, thus centering the element */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    
+  }
+  .pagination__button {
+    width: 50px;
+    height: 50px;
+  }
+  .pagination__button--left {
+    justify-self: left;
+  }
+  .pagination__button--right {
+    justify-self: right;
+  }
+  .--hide {
+    visibility: hidden;
+  }
+
+.arrowButton {
+    background-color: var(--primaryBtn);
+    border: none;
+    border-radius: var(--menuButtonRadius);
+    color: var(--primary);
+    width: 32px; 
+    height: 24px;
+    filter: var(--dropshadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+/* Kodning af fejlmeldings-vejledningen */ 
+
+.guideHeadline {
+    text-align: center;
+    font-size: var(--xxlText);
+}
+
+.guide {
+    font-size: var(--smallText);
+    margin-left: 32px;
+    padding: 16px;
+    border-bottom: 1px solid black; 
+    align-items: center;
+
+}
+
+.stopMachinary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.buttonStart {
+    width: 48px;
+    height: 24px; 
+    background-color: var(--green);
+    border: none; 
+    filter: var(--dropshadow);
+    color: var(--primary);
+
+}
+
+.guideGrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttonStop {
+    width: 48px;
+    height: 24px; 
+    background-color: var(--red);
+    color: var(--primary);
+    border: none;
+    
+}
+
+.guideButton {
+    border-radius: var(--menuButtonRadius);
+    margin-left: 3rem;
+}
+.finishButton {
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    border: none; 
+    border-radius: var(--menuButtonRadius);
+    filter: var(--dropshadow);
+    display: none;
+    
+}
+
+
+
+
+
+
+
+/* Design af screens i menuen */ 
+
+img {
+    width: 240px;
+    height: 200; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.progress {
+    position: relative;
+    width: 197px;
+    height: 35px; 
+    background: #9cbab4;
+    overflow: hidden; 
+    border: 1px solid black; 
+    
+}
+
+.progress__fill {
+    width: 91%; 
+    height: 100%; 
+    background: var(--green);
+    transition: all 0.2s;
+}
+
+.progress__text {
+    position: absolute; 
+    top: 50%; 
+    right: 5px; 
+    transform: translateY(-50%);
+   font: bold 14px 'Quicksand', sans-serif; 
+   color: white; 
+}
+
+.progression {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 5px; 
+
+}
